@@ -1,0 +1,51 @@
+.product-banner{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #243a6f;
+    .left img{
+        object-fit: cover;
+        height: 100%;
+    }
+    .right{
+        align-self: center;
+        text-align: center;
+        padding: 1.6rem;
+        
+    }
+    .content h2{
+        color: #fbb419;
+        font-size: 3rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+    }
+    .content .discount{
+        color: #b888ff;
+        font-size: 6rem;
+        font-weight: 700;
+        display: block;
+        line-height: 1;
+    }
+    h1{
+        color: white;
+    }
+}
+@media only screen and (max-width:996px){
+    .product-banner .content h1 span{
+        font-size: 5rem;
+    }
+}
+@media only screen and (max-width:768px){
+    .product-banner {
+        grid-template-columns: 1fr;
+    }
+    .product-banner .left{
+        display: block;
+    }
+    .product-banner .content h1 span{
+        font-size: 4rem;
+        color: #fff;
+    }
+    .product-banner .content a{
+        padding: 1rem 3rem;
+    }
+}

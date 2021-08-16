@@ -1,0 +1,18 @@
+.brands-center{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 3rem;
+}
+.brand{
+    height: 8rem;
+    width: 8rem;
+    margin: 0 auto;
+    img{
+        object-fit: contain;
+    }
+}
+@media only screen and (max-width:786px){
+    .brands-center{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
